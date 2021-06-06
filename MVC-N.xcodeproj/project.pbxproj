@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		110E7763266D280E003666A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7762266D280E003666A3 /* AppDelegate.swift */; };
 		110E7765266D280E003666A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7764266D280E003666A3 /* SceneDelegate.swift */; };
-		110E7767266D280E003666A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7766266D280E003666A3 /* ViewController.swift */; };
+		110E7767266D280E003666A3 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7766266D280E003666A3 /* CommentsViewController.swift */; };
 		110E776A266D280E003666A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110E7768266D280E003666A3 /* Main.storyboard */; };
 		110E776C266D2810003666A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110E776B266D2810003666A3 /* Assets.xcassets */; };
 		110E776F266D2810003666A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110E776D266D2810003666A3 /* LaunchScreen.storyboard */; };
+		110E7781266D2FA9003666A3 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7780266D2FA9003666A3 /* CommentCell.swift */; };
+		110E7783266D312B003666A3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7782266D312B003666A3 /* Comment.swift */; };
+		110E7786266D33A1003666A3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7785266D33A1003666A3 /* NetworkService.swift */; };
+		110E7789266D39AD003666A3 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7788266D39AD003666A3 /* CommentNetworkService.swift */; };
+		110E778B266D3A6E003666A3 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E778A266D3A6E003666A3 /* GetCommentResponse.swift */; };
+		110E778E266D3B4D003666A3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E778D266D3B4D003666A3 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		110E775F266D280E003666A3 /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		110E7762266D280E003666A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		110E7764266D280E003666A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		110E7766266D280E003666A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		110E7766266D280E003666A3 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		110E7769266D280E003666A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		110E776B266D2810003666A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		110E776E266D2810003666A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110E7770266D2810003666A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110E7780266D2FA9003666A3 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		110E7782266D312B003666A3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		110E7785266D33A1003666A3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		110E7788266D39AD003666A3 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		110E778A266D3A6E003666A3 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		110E778D266D3B4D003666A3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,117 @@
 		110E7761266D280E003666A3 /* MVC-N */ = {
 			isa = PBXGroup;
 			children = (
-				110E7762266D280E003666A3 /* AppDelegate.swift */,
-				110E7764266D280E003666A3 /* SceneDelegate.swift */,
-				110E7766266D280E003666A3 /* ViewController.swift */,
-				110E7768266D280E003666A3 /* Main.storyboard */,
-				110E776B266D2810003666A3 /* Assets.xcassets */,
-				110E776D266D2810003666A3 /* LaunchScreen.storyboard */,
-				110E7770266D2810003666A3 /* Info.plist */,
+				110E777A266D2852003666A3 /* Application */,
+				110E777B266D2898003666A3 /* Comments */,
+				110E777F266D2905003666A3 /* Supporting files */,
 			);
 			path = "MVC-N";
+			sourceTree = "<group>";
+		};
+		110E7776266D2821003666A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				110E778D266D3B4D003666A3 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		110E7778266D282C003666A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				110E776D266D2810003666A3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		110E7779266D2832003666A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				110E7762266D280E003666A3 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		110E777A266D2852003666A3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				110E7776266D2821003666A3 /* Model */,
+				110E7778266D282C003666A3 /* View */,
+				110E7779266D2832003666A3 /* Controller */,
+				110E7784266D337C003666A3 /* NetworkService */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		110E777B266D2898003666A3 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				110E777C266D28AE003666A3 /* Model */,
+				110E777D266D28B6003666A3 /* View */,
+				110E777E266D28BA003666A3 /* Controller */,
+				110E7787266D3987003666A3 /* CommentNetworkService */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		110E777C266D28AE003666A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				110E778C266D3AE4003666A3 /* Responses */,
+				110E7782266D312B003666A3 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		110E777D266D28B6003666A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				110E7768266D280E003666A3 /* Main.storyboard */,
+				110E7780266D2FA9003666A3 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		110E777E266D28BA003666A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				110E7766266D280E003666A3 /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		110E777F266D2905003666A3 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				110E7764266D280E003666A3 /* SceneDelegate.swift */,
+				110E776B266D2810003666A3 /* Assets.xcassets */,
+				110E7770266D2810003666A3 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		110E7784266D337C003666A3 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				110E7785266D33A1003666A3 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		110E7787266D3987003666A3 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				110E7788266D39AD003666A3 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
+			sourceTree = "<group>";
+		};
+		110E778C266D3AE4003666A3 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				110E778A266D3A6E003666A3 /* GetCommentResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +251,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110E7767266D280E003666A3 /* ViewController.swift in Sources */,
+				110E7783266D312B003666A3 /* Comment.swift in Sources */,
+				110E7767266D280E003666A3 /* CommentsViewController.swift in Sources */,
 				110E7763266D280E003666A3 /* AppDelegate.swift in Sources */,
 				110E7765266D280E003666A3 /* SceneDelegate.swift in Sources */,
+				110E7786266D33A1003666A3 /* NetworkService.swift in Sources */,
+				110E778B266D3A6E003666A3 /* GetCommentResponse.swift in Sources */,
+				110E778E266D3B4D003666A3 /* NetworkError.swift in Sources */,
+				110E7781266D2FA9003666A3 /* CommentCell.swift in Sources */,
+				110E7789266D39AD003666A3 /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +408,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CHP9M644H;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CHP9M644H;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
